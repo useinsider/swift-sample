@@ -1,0 +1,27 @@
+#source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+
+use_frameworks!
+
+target 'InsiderDemo' do
+  inherit! :search_paths
+  # Pods for InsiderDemo
+pod 'InsiderMobile', '10.4.0'
+end
+
+target 'InsiderNotificationContent' do
+  inherit! :search_paths
+  # Pods for InsiderNotificationContent
+  pod "InsiderMobileAdvancedNotification"
+end
+
+target 'InsiderNotificationService' do
+  inherit! :search_paths
+  # Pods for InsiderNotificationService
+  pod "InsiderMobileAdvancedNotification"
+end
+
+# Your `pod --version` have to be equal or higher than 1.8.4.
+# Make sure that you have implemted `use_frameworks!` 
+# Make sure that you have implemented `inherit! :search_paths`.
+# Make sure that your project deployment targets equal or higher than iOS 10.0.
