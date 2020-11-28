@@ -53,6 +53,11 @@ class ViewController: UIViewController {
         currentUser?.logout()
         currentUser?.login(identifiers)
         
+        currentUser?.login(identifiers, insiderIDResult: { (insiderID) in
+            // Handle here
+            print(insiderID!)
+        })
+        
         // Setting custom attributes.
         // MARK: Your attribute key should be all lowercased and should not include any special or non Latin characters or any space, otherwise this attribute will be ignored. You can use underscore _.
         
@@ -147,14 +152,14 @@ class ViewController: UIViewController {
         
         // ID comes from your smart recommendation campaign.
         // Please follow the language code structure. For instance tr_TR.
-        Insider.getSmartRecommendation(withID: 1, language: "tr_TR", currency: "TRY", smartRecommendation: {
+        Insider.getSmartRecommendation(withID: 1, locale: "tr_TR", currency: "TRY", smartRecommendation: {
             (recommendation) in
             // Handle here
         })
         
         // You must need to have minumun 2 taxonomy in your product object. Otherwise any Smart Recommendation
         // operator will  not work.
-        Insider.getSmartRecommendation(with: insiderExampleProduct, recommendationID: 1, language: "tr_TR") {
+        Insider.getSmartRecommendation(with: insiderExampleProduct, recommendationID: 1, locale: "tr_TR") {
             (recommendation) in
             // Handle here
         }
@@ -210,7 +215,7 @@ class ViewController: UIViewController {
         
         // --- SEARCH API --- //
         
-        Insider.getSearchData("keyword", currency: "TRY", searchResult: {
+        Insider.getSearchData("keyword", currency: "TRY", locale: "tr_TR", searchResult: {
             (searchResult) in
             // Handle here
         })
