@@ -55,7 +55,6 @@ class ViewController: UIViewController {
         
         currentUser?.login(identifiers, insiderIDResult: { (insiderID) in
             // Handle here
-            print(insiderID!)
         })
         
         // Setting custom attributes.
