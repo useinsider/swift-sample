@@ -42,8 +42,7 @@ class ViewController: UIViewController {
         let identifiers = InsiderIdentifiers()
             .addEmail()("mobile@useinsider.com")?
             .addPhoneNumber()("+901234567")?
-            .addUserID()("CRM-ID")?
-            .addCustomIdentifier()("key", "value")
+            .addUserID()("CRM-ID")
         
         // If you do not pass the identifiers via login method, they will not work.
         // MARK: Make sure you call login method with Insider Identifiers.
@@ -52,10 +51,6 @@ class ViewController: UIViewController {
         // Login and Logout
         currentUser?.logout()
         currentUser?.login(identifiers)
-        
-        currentUser?.login(identifiers, insiderIDResult: { (insiderID) in
-            // Handle here
-        })
         
         // Setting custom attributes.
         // MARK: Your attribute key should be all lowercased and should not include any special or non Latin characters or any space, otherwise this attribute will be ignored. You can use underscore _.
