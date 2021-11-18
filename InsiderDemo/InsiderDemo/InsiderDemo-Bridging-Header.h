@@ -4,7 +4,3 @@
 
 #import <InsiderMobile/Insider.h>
 #import <InsiderMobile/InsiderCallbackTypeEnum.h>
-//#import <InsiderAdvancedNotification>
-#import <InsiderMobileAdvancedNotification/InsiderPushNotification.h>
-
-#import "iCarousel.h"

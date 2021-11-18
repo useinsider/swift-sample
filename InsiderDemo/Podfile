@@ -6,7 +6,7 @@ use_frameworks!
 target 'InsiderDemo' do
   inherit! :search_paths
   # Pods for InsiderDemo
-pod 'InsiderMobile'
+pod 'InsiderMobile', '10.7.0'
 end
 
 target 'InsiderNotificationContent' do

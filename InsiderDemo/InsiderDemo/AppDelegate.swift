@@ -14,11 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     var window: UIWindow?
     
     // FIXME: Please change with your app group.
-    let APP_GROUP = "group.com.useinsider.mobile-ios"
+    let APP_GROUP = "group.com.useinsider.InsiderDemo"
     
     // FIXME: Please change with your partner name.
     // Make sure that all the letters are lowercase.
-    let INSIDER_PARTNER_NAME = "qaautomation1"
+    let INSIDER_PARTNER_NAME = "your_partner_name"
     
     // FIXME: Please change your URL Types to your partner name with insider prefix.
     // URL Type which identifier is Insider and URL Schemes is your Insider Partner Name with insider prefix.
@@ -31,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         Insider.initWithLaunchOptions(launchOptions, partnerName: INSIDER_PARTNER_NAME, appGroup: APP_GROUP)
         Insider.register(withQuietPermission: false)
         Insider.registerCallback(with: #selector(insiderCallbackHandler(info:)), sender: self)
+        Insider.enableAppTracker(true)
         Insider.enableIDFACollection(false);
         
         // You need to have required permissions in order to have location information from the user.
