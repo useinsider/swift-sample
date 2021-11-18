@@ -1,11 +1,11 @@
 PODS:
   - iCarousel (1.8.3)
-  - InsiderMobile (10.7.0)
-  - InsiderMobileAdvancedNotification (1.0.5):
+  - InsiderMobile (11.3.3)
+  - InsiderMobileAdvancedNotification (1.0.6):
     - iCarousel
 
 DEPENDENCIES:
-  - InsiderMobile (= 10.7.0)
+  - InsiderMobile
   - InsiderMobileAdvancedNotification
 
 SPEC REPOS:
@@ -16,9 +16,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
-  InsiderMobile: 8b74ee0f67169e8a289555b94ae1670e4308f1fe
-  InsiderMobileAdvancedNotification: be6a46e1ee3fde9a0b20848d6efa35b929f85b7a
+  InsiderMobile: d9cf99966ef7c12b181e9e605a7a6107a602c7b8
+  InsiderMobileAdvancedNotification: 70402f66430056bcf8c5223e2e3b2d603a50137c
 
-PODFILE CHECKSUM: 6d3c1e9eb7e47d0dae99512a695c4504b7127196
+PODFILE CHECKSUM: f2a39b6875e1e3d7693ec6e7b7f102e9b979c168
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.0
