@@ -34,15 +34,15 @@ class ViewController: UIViewController {
             .setLocationOptin()(true)?
             .setFacebookID()("Facebook-ID")?
             .setTwitterID()("Twittter-ID")?
-            .setLanguage()("TR")
+            .setLanguage()("TR")?
+            .setLocale()("tr_TR")
         
         
         // Setting User Identifiers.
         let identifiers = InsiderIdentifiers()
             .addEmail()("mobile@useinsider.com")?
             .addPhoneNumber()("+901234567")?
-            .addUserID()("CRM-ID")?
-            .addCustomIdentifier()("key", "value")
+            .addUserID()("CRM-ID")
         
         // If you do not pass the identifiers via login method, they will not work.
         // MARK: Make sure you call login method with Insider Identifiers.
@@ -146,14 +146,14 @@ class ViewController: UIViewController {
         
         // ID comes from your smart recommendation campaign.
         // Please follow the language code structure. For instance tr_TR.
-        Insider.getSmartRecommendation(withID: 1, language: "tr_TR", currency: "TRY", smartRecommendation: {
+        Insider.getSmartRecommendation(withID: 1, locale: "tr_TR", currency: "TRY", smartRecommendation: {
             (recommendation) in
             // Handle here
         })
         
         // You must need to have minumun 2 taxonomy in your product object. Otherwise any Smart Recommendation
         // operator will  not work.
-        Insider.getSmartRecommendation(with: insiderExampleProduct, recommendationID: 1, language: "tr_TR") {
+        Insider.getSmartRecommendation(with: insiderExampleProduct, recommendationID: 1, locale: "tr_TR") {
             (recommendation) in
             // Handle here
         }
