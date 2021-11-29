@@ -3,7 +3,7 @@
 //  InsiderDemo
 //
 //  Created by Insider on 5.08.2020.
-//  Copyright © 2020 Insider. All rights reserved.
+//  Copyright © 2021 Insider. All rights reserved.
 //
 
 import UIKit
@@ -31,7 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         Insider.initWithLaunchOptions(launchOptions, partnerName: INSIDER_PARTNER_NAME, appGroup: APP_GROUP)
         Insider.register(withQuietPermission: false)
         Insider.registerCallback(with: #selector(insiderCallbackHandler(info:)), sender: self)
-        Insider.enableAppTracker(true)
         Insider.enableIDFACollection(false);
         
         // You need to have required permissions in order to have location information from the user.
