@@ -206,13 +206,6 @@ class ViewController: UIViewController {
         // Integer
         let contentOptimizerInt = Insider.getContentInt(withName: "int_variable_name", defaultInt: 10, dataType: ContentOptimizerDataType.element)
         print(contentOptimizerInt)
-        
-        // --- SEARCH API --- //
-        
-        Insider.getSearchData("keyword", currency: "TRY", locale: "tr_TR", searchResult: {
-            (searchResult) in
-            // Handle here
-        })
     }
         
 }
