@@ -23,7 +23,15 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>insideryour_partner_name</string>
+				<string>insiderorkunbites</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>insiderqaautomation1</string>
 			</array>
 		</dict>
 	</array>

@@ -31,7 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         Insider.initWithLaunchOptions(launchOptions, partnerName: INSIDER_PARTNER_NAME, appGroup: APP_GROUP)
         Insider.register(withQuietPermission: false)
         Insider.registerCallback(with: #selector(insiderCallbackHandler(info:)), sender: self)
-        Insider.enableAppTracker(true)
         Insider.enableIDFACollection(false);
         
         // You need to have required permissions in order to have location information from the user.
