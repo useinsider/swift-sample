@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  InsiderDemo
 //
-//  Created by Insider on 5.08.2020.
-//  Copyright © 2021 Insider. All rights reserved.
+//  Created by Insider on 17.08.2020.
+//  Copyright © 2020 Insider. All rights reserved.
 //
 
 import UIKit
@@ -14,11 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     var window: UIWindow?
     
     // FIXME: Please change with your app group.
-    let APP_GROUP = "group.com.useinsider.InsiderDemo"
+    let APP_GROUP = "group.com.company.product"
     
     // FIXME: Please change with your partner name.
     // Make sure that all the letters are lowercase.
-    let INSIDER_PARTNER_NAME = "your_partner_name"
+    let INSIDER_PARTNER_NAME = "PARTNER_NAME"
     
     // FIXME: Please change your URL Types to your partner name with insider prefix.
     // URL Type which identifier is Insider and URL Schemes is your Insider Partner Name with insider prefix.
@@ -31,14 +31,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         Insider.initWithLaunchOptions(launchOptions, partnerName: INSIDER_PARTNER_NAME, appGroup: APP_GROUP)
         Insider.register(withQuietPermission: false)
         Insider.registerCallback(with: #selector(insiderCallbackHandler(info:)), sender: self)
-        Insider.enableIDFACollection(false);
+        Insider.getCurrentUser()?.setLocale()("tr_TR")
         
         // You need to have required permissions in order to have location information from the user.
         // MARK: Please add required permissons to your info.plist.
         // https://developer.apple.com/documentation/corelocation/requesting_authorization_for_location_services
         Insider.startTrackingGeofence();
-        
-        Insider.getCurrentUser()?.setLocale()("tr_TR")
         
         return true
     }
@@ -68,4 +66,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
     
 }
+
 

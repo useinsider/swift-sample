@@ -1,0 +1,3 @@
+binary "https://mobilesdk.useinsider.com/carthage/InsiderMobileAdvancedNotification/1.0.6/InsiderMobileAdvancedNotification.json"
+binary "https://mobilesdk.useinsider.com/carthage/InsiderMobile/12.0.0/InsiderMobile.json" ~> 12.0.0
+github "nicklockwood/iCarousel" "master"

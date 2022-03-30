@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  InsiderDemo
 //
-//  Created by Insider on 5.08.2020.
+//  Created by Insider on 17.08.2020.
 //  Copyright © 2020 Insider. All rights reserved.
 //
 
@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func triggerButtonOnCLick(_ sender: UIButton) {
+    @IBAction func triggerButtonOnClick(_ sender: UIButton) {
         
         // --- USER --- //
         
@@ -207,6 +207,5 @@ class ViewController: UIViewController {
         let contentOptimizerInt = Insider.getContentInt(withName: "int_variable_name", defaultInt: 10, dataType: ContentOptimizerDataType.element)
         print(contentOptimizerInt)
     }
-        
 }
 
