@@ -3,4 +3,3 @@
 //
 
 #import <InsiderMobileAdvancedNotification/InsiderPushNotification.h>
-#import <iCarousel/iCarousel.h>

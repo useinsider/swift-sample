@@ -19,15 +19,14 @@
 		56D6161824EACA3000A3394B /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D6161724EACA3000A3394B /* NotificationViewController.swift */; };
 		56D6161B24EACA3000A3394B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D6161924EACA3000A3394B /* MainInterface.storyboard */; };
 		56D6161F24EACA3000A3394B /* InsiderNotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 56D6161024EACA3000A3394B /* InsiderNotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		9D66098B27F443EF008105F0 /* InsiderMobileAdvancedNotification.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D66098827F443EF008105F0 /* InsiderMobileAdvancedNotification.xcframework */; };
-		9D66098C27F443EF008105F0 /* InsiderMobileAdvancedNotification.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D66098827F443EF008105F0 /* InsiderMobileAdvancedNotification.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9D66098E27F443F6008105F0 /* InsiderMobileAdvancedNotification.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D66098827F443EF008105F0 /* InsiderMobileAdvancedNotification.xcframework */; };
-		9D66098F27F443F6008105F0 /* InsiderMobileAdvancedNotification.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D66098827F443EF008105F0 /* InsiderMobileAdvancedNotification.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9D66099227F44417008105F0 /* InsiderInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D66099127F44417008105F0 /* InsiderInterface.storyboard */; };
-		9D66099327F446B8008105F0 /* iCarousel.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D66098727F443EF008105F0 /* iCarousel.xcframework */; };
-		9D66099427F446B8008105F0 /* iCarousel.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D66098727F443EF008105F0 /* iCarousel.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9D6609A827F4541F008105F0 /* InsiderMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D66098327F443CF008105F0 /* InsiderMobile.xcframework */; };
-		9D6609A927F4541F008105F0 /* InsiderMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D66098327F443CF008105F0 /* InsiderMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F40ACE582845FFDC00DEB54E /* InsiderMobileAdvancedNotification.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40ACE552845FEBF00DEB54E /* InsiderMobileAdvancedNotification.xcframework */; };
+		F40ACE592845FFDC00DEB54E /* InsiderMobileAdvancedNotification.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F40ACE552845FEBF00DEB54E /* InsiderMobileAdvancedNotification.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F40ACE5A2845FFDE00DEB54E /* InsiderMobileAdvancedNotification.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40ACE552845FEBF00DEB54E /* InsiderMobileAdvancedNotification.xcframework */; };
+		F40ACE5B2845FFDE00DEB54E /* InsiderMobileAdvancedNotification.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F40ACE552845FEBF00DEB54E /* InsiderMobileAdvancedNotification.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F40ACE5C2845FFF600DEB54E /* InsiderMobile.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F40ACE532845FEB600DEB54E /* InsiderMobile.xcframework */; };
+		F40ACE5D2845FFF600DEB54E /* InsiderMobile.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F40ACE532845FEB600DEB54E /* InsiderMobile.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4A6232C28461F0B00024BE7 /* InsiderInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A6232B28461F0B00024BE7 /* InsiderInterface.storyboard */; };
+		F4A6232D28461F0B00024BE7 /* InsiderInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A6232B28461F0B00024BE7 /* InsiderInterface.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +65,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9D66098C27F443EF008105F0 /* InsiderMobileAdvancedNotification.xcframework in Embed Frameworks */,
+				F40ACE5B2845FFDE00DEB54E /* InsiderMobileAdvancedNotification.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,8 +76,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9D66098F27F443F6008105F0 /* InsiderMobileAdvancedNotification.xcframework in Embed Frameworks */,
-				9D66099427F446B8008105F0 /* iCarousel.xcframework in Embed Frameworks */,
+				F40ACE592845FFDC00DEB54E /* InsiderMobileAdvancedNotification.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +87,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9D6609A927F4541F008105F0 /* InsiderMobile.xcframework in Embed Frameworks */,
+				F40ACE5D2845FFF600DEB54E /* InsiderMobile.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,10 +117,9 @@
 		56D6162624EACA5300A3394B /* InsiderNotificationContent-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InsiderNotificationContent-Bridging-Header.h"; sourceTree = "<group>"; };
 		56D6162924EACB9C00A3394B /* InsiderNotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InsiderNotificationService.entitlements; sourceTree = "<group>"; };
 		56D6162A24EACBA400A3394B /* InsiderNotificationContent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InsiderNotificationContent.entitlements; sourceTree = "<group>"; };
-		9D66098327F443CF008105F0 /* InsiderMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = InsiderMobile.xcframework; path = Carthage/Build/InsiderMobile.xcframework; sourceTree = "<group>"; };
-		9D66098727F443EF008105F0 /* iCarousel.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = iCarousel.xcframework; path = Carthage/Build/iCarousel.xcframework; sourceTree = "<group>"; };
-		9D66098827F443EF008105F0 /* InsiderMobileAdvancedNotification.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = InsiderMobileAdvancedNotification.xcframework; path = Carthage/Build/InsiderMobileAdvancedNotification.xcframework; sourceTree = "<group>"; };
-		9D66099127F44417008105F0 /* InsiderInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = InsiderInterface.storyboard; path = Carthage/Build/InsiderMobileAdvancedNotification.xcframework/InsiderInterface.storyboard; sourceTree = SOURCE_ROOT; };
+		F40ACE532845FEB600DEB54E /* InsiderMobile.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = InsiderMobile.xcframework; path = Carthage/Build/InsiderMobile.xcframework; sourceTree = "<group>"; };
+		F40ACE552845FEBF00DEB54E /* InsiderMobileAdvancedNotification.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = InsiderMobileAdvancedNotification.xcframework; path = Carthage/Build/InsiderMobileAdvancedNotification.xcframework; sourceTree = "<group>"; };
+		F4A6232B28461F0B00024BE7 /* InsiderInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = InsiderInterface.storyboard; path = Carthage/Build/InsiderMobileAdvancedNotification.xcframework/InsiderInterface.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D6609A827F4541F008105F0 /* InsiderMobile.xcframework in Frameworks */,
+				F40ACE5C2845FFF600DEB54E /* InsiderMobile.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D66098B27F443EF008105F0 /* InsiderMobileAdvancedNotification.xcframework in Frameworks */,
+				F40ACE5A2845FFDE00DEB54E /* InsiderMobileAdvancedNotification.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,10 +143,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D66098E27F443F6008105F0 /* InsiderMobileAdvancedNotification.xcframework in Frameworks */,
+				F40ACE582845FFDC00DEB54E /* InsiderMobileAdvancedNotification.xcframework in Frameworks */,
 				56D6161524EACA3000A3394B /* UserNotificationsUI.framework in Frameworks */,
 				56D6161324EACA3000A3394B /* UserNotifications.framework in Frameworks */,
-				9D66099327F446B8008105F0 /* iCarousel.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,11 +202,10 @@
 		56D6161124EACA3000A3394B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9D66098727F443EF008105F0 /* iCarousel.xcframework */,
-				9D66098827F443EF008105F0 /* InsiderMobileAdvancedNotification.xcframework */,
-				9D66098327F443CF008105F0 /* InsiderMobile.xcframework */,
 				56D6161224EACA3000A3394B /* UserNotifications.framework */,
 				56D6161424EACA3000A3394B /* UserNotificationsUI.framework */,
+				F40ACE532845FEB600DEB54E /* InsiderMobile.xcframework */,
+				F40ACE552845FEBF00DEB54E /* InsiderMobileAdvancedNotification.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,7 +213,7 @@
 		56D6161624EACA3000A3394B /* InsiderNotificationContent */ = {
 			isa = PBXGroup;
 			children = (
-				9D66099127F44417008105F0 /* InsiderInterface.storyboard */,
+				F4A6232B28461F0B00024BE7 /* InsiderInterface.storyboard */,
 				56D6162A24EACBA400A3394B /* InsiderNotificationContent.entitlements */,
 				56D6161724EACA3000A3394B /* NotificationViewController.swift */,
 				56D6161924EACA3000A3394B /* MainInterface.storyboard */,
@@ -348,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A6232D28461F0B00024BE7 /* InsiderInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56D6161B24EACA3000A3394B /* MainInterface.storyboard in Resources */,
-				9D66099227F44417008105F0 /* InsiderInterface.storyboard in Resources */,
+				F4A6232C28461F0B00024BE7 /* InsiderInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

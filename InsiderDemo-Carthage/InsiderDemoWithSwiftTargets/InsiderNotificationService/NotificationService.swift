@@ -3,7 +3,7 @@
 //  InsiderNotificationService
 //
 //  Created by Insider on 29.03.2022.
-//  Copyright © 2020 Insider. All rights reserved.
+//  Copyright © 2022 Insider. All rights reserved.
 //
 
 import UserNotifications
@@ -51,7 +51,4 @@ class NotificationService: UNNotificationServiceExtension {
             contentHandler(bestAttemptContent)
         }
     }
-    
-    
-    
 }
