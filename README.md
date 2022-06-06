@@ -11,3 +11,4 @@ Check the changelogs 👉 [here](https://academy.useinsider.com/docs/ios-sdk-cha
 5. Change bundle identifier with yours and select desired App Group
 6. Repeat the previous step for all targets(InsiderDemo, InsiderNotificationContent, NotificationService)
 7. Change the partner name for the URL Types, URL Schemes section(InsiderDemo)
+8. In the project folder type ```pod install``` for getting dependencies
