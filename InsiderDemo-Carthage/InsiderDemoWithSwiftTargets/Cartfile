@@ -1,2 +1,2 @@
 binary "https://mobilesdk.useinsider.com/carthage/InsiderMobileAdvancedNotification/1.1.1/InsiderMobileAdvancedNotification.json"
-binary "https://mobilesdk.useinsider.com/carthage/InsiderMobile/12.2.3/InsiderMobile.json" ~> 12.2.3
+binary "https://mobilesdk.useinsider.com/carthage/InsiderMobile/12.4.0/InsiderMobile.json" ~> 12.4.0
