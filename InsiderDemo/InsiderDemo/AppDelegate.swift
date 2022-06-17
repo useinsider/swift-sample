@@ -29,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         UNUserNotificationCenter.current().delegate = self
         
         Insider.initWithLaunchOptions(launchOptions, partnerName: INSIDER_PARTNER_NAME, appGroup: APP_GROUP)
+        Insider.setActiveForegroundPushView()
         Insider.register(withQuietPermission: false)
         Insider.registerCallback(with: #selector(insiderCallbackHandler(info:)), sender: self)
         Insider.enableIDFACollection(false);
@@ -43,29 +44,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         return true
     }
     
+    func showAlertAction(title: String, message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.window?.rootViewController?.present(alert, animated: true, completion: nil)
+    }
+    
     @objc func insiderCallbackHandler(info: [String : AnyObject]){
         let type = info["type"]?.intValue ?? -1
         switch type {
         case InsiderCallbackType.notificationOpen.rawValue:
             print(info)
-            break
-        case InsiderCallbackType.inappButtonClick.rawValue:
-            print(info)
-            break
-        case InsiderCallbackType.tempStorePurchase.rawValue:
-            print(info)
-            break
-        case InsiderCallbackType.tempStoreAddedToCart.rawValue:
-            print(info)
+            let callback = String(describing: info)
+            showAlertAction(title: "InsiderCallbackTypeNotificationOpen", message: callback)
             break
         case InsiderCallbackType.tempStoreCustomAction.rawValue:
             print(info)
+            let callback = String(describing: info)
+            showAlertAction(title: "InsiderCallbackTypeTempStoreCustomAction", message: callback)
             break
         default:
             print(info)
             break
         }
     }
-    
 }
-
