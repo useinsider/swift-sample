@@ -29,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         UNUserNotificationCenter.current().delegate = self
         
         Insider.initWithLaunchOptions(launchOptions, partnerName: INSIDER_PARTNER_NAME, appGroup: APP_GROUP)
+        Insider.setActiveForegroundPushView()
         Insider.register(withQuietPermission: false)
         Insider.registerCallback(with: #selector(insiderCallbackHandler(info:)), sender: self)
         Insider.getCurrentUser()?.setLocale()("tr_TR")
@@ -45,15 +46,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         let type = info["type"]?.intValue ?? -1
         switch type {
         case InsiderCallbackType.notificationOpen.rawValue:
-            print(info)
-            break
-        case InsiderCallbackType.inappButtonClick.rawValue:
-            print(info)
-            break
-        case InsiderCallbackType.tempStorePurchase.rawValue:
-            print(info)
-            break
-        case InsiderCallbackType.tempStoreAddedToCart.rawValue:
             print(info)
             break
         case InsiderCallbackType.tempStoreCustomAction.rawValue:
