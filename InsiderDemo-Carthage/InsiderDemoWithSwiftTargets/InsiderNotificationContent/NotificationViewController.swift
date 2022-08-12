@@ -1,16 +1,9 @@
-//
-//  NotificationViewController.swift
-//  InsiderNotificationContent
-//
-//  Created by Insider on 29.03.2022.
-//
-
 import UIKit
 import UserNotifications
 import UserNotificationsUI
-
 // FIXME: Please change with your app group.
-let APP_GROUP = "group.com.company.product"
+
+let APP_GROUP = "group.com.useinsider.InsiderDemo"
 
 class NotificationViewController: UIViewController, UNNotificationContentExtension, iCarouselDelegate, iCarouselDataSource {
     @IBOutlet weak var carousel: iCarousel!
@@ -34,17 +27,18 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any required interface initialization here.
-        InsiderPushNotification.interactivePushLoad(APP_GROUP, superView:self.view)
-        carousel.type = .rotary
-        carousel.reloadData()
     }
     
     func didReceive(_ notification: UNNotification) {
+        InsiderPushNotification.interactivePushLoad(APP_GROUP, superView:self.view, notification: notification)
+        
+        carousel.type = .rotary
+        carousel.reloadData()
+        
         InsiderPushNotification.interactivePushDidReceive()
     }
     
-    func didReceive(_ response: UNNotificationResponse,completionHandler completion: @escaping (UNNotificationContentExtensionResponseOption) -> Void) {
+    func didReceive(_ response: UNNotificationResponse, completionHandler completion: @escaping (UNNotificationContentExtensionResponseOption) -> Void) {
         if (response.actionIdentifier == "insider_int_push_next") {
             carousel.scrollToItem(at: InsiderPushNotification.didReceiveResponse(carousel.currentItemIndex), animated: true)
             completion(.doNotDismiss)

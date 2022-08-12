@@ -1,15 +1,7 @@
-//
-//  NotificationService.swift
-//  InsiderNotificationService
-//
-//  Created by Insider on 29.03.2022.
-//  Copyright © 2022 Insider. All rights reserved.
-//
-
 import UserNotifications
 
 // FIXME: Please change with your app group.
-let APP_GROUP = "group.com.company.product"
+let APP_GROUP = "group.com.useinsider.InsiderDemo"
 
 class NotificationService: UNNotificationServiceExtension {
     
@@ -51,4 +43,5 @@ class NotificationService: UNNotificationServiceExtension {
             contentHandler(bestAttemptContent)
         }
     }
+    
 }
