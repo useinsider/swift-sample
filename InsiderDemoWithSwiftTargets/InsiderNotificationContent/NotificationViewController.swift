@@ -1,11 +1,3 @@
-//
-// NotificationViewController.swift
-// InsiderNotificationContent
-//
-// Created by Insider on 17.08.2020.
-// Copyright © 2020 Insider. All rights reserved.
-//
-
 import UIKit
 import UserNotifications
 import UserNotificationsUI
