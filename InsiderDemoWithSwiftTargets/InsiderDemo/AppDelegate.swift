@@ -34,11 +34,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         Insider.registerCallback(with: #selector(insiderCallbackHandler(info:)), sender: self)
         Insider.getCurrentUser()?.setLocale()("tr_TR")
         
-        // You need to have required permissions in order to have location information from the user.
-        // MARK: Please add required permissons to your info.plist.
-        // https://developer.apple.com/documentation/corelocation/requesting_authorization_for_location_services
-        Insider.startTrackingGeofence();
-        
         return true
     }
     
