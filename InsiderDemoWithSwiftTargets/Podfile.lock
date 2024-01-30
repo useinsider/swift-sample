@@ -1,6 +1,6 @@
 PODS:
-  - InsiderMobile (12.5.2)
-  - InsiderMobileAdvancedNotification (1.2.1)
+  - InsiderMobile (13.3.3)
+  - InsiderMobileAdvancedNotification (1.2.2)
 
 DEPENDENCIES:
   - InsiderMobile
@@ -12,9 +12,9 @@ SPEC REPOS:
     - InsiderMobileAdvancedNotification
 
 SPEC CHECKSUMS:
-  InsiderMobile: 6c0def28487ac5a994055f042495ab8905e99959
-  InsiderMobileAdvancedNotification: adec892c8fc97d88246e238c74926f4a94f1d803
+  InsiderMobile: 48befbf95079608ac5e57960ad0e89ec746f6867
+  InsiderMobileAdvancedNotification: 5f6721f0a6a6548f711cef29e0b264e96492c961
 
-PODFILE CHECKSUM: 6ea9c3c15ec6a15191ee62b97fbd28e866702491
+PODFILE CHECKSUM: 3bc6bb3980df4d817e424ecb7be2123c929494b0
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.15.0

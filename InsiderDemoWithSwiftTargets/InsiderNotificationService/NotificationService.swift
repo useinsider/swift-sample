@@ -1,31 +1,23 @@
-//
-//  NotificationService.swift
-//  InsiderNotificationService
-//
-//  Created by Insider on 17.08.2020.
-//  Copyright © 2020 Insider. All rights reserved.
-//
-
 import UserNotifications
 
 // FIXME: Please change with your app group.
 let APP_GROUP = "group.com.useinsider.InsiderDemo"
 
 class NotificationService: UNNotificationServiceExtension {
-    
+
     var contentHandler: ((UNNotificationContent) -> Void)?
     var bestAttemptContent: UNMutableNotificationContent?
-    
+
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
         self.contentHandler = contentHandler
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
-        
+
         if let bestAttemptContent = bestAttemptContent {
             // Modify the notification content here...
-            
+
             let nextButtonText = ">>"
             let goToAppText = "Launch App"
-            
+
             InsiderPushNotification.showInsiderRichPush(
                 request,
                 appGroup: APP_GROUP as String,
@@ -43,7 +35,7 @@ class NotificationService: UNNotificationServiceExtension {
             print(bestAttemptContent.attachments)
         }
     }
-    
+
     override func serviceExtensionTimeWillExpire() {
         // Called just before the extension will be terminated by the system.
         // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
@@ -51,5 +43,5 @@ class NotificationService: UNNotificationServiceExtension {
             contentHandler(bestAttemptContent)
         }
     }
-    
+
 }
